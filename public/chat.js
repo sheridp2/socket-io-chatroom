@@ -1,5 +1,5 @@
 
-$(document).ready(function () {
+window.onload = function () {
   const socket = io.connect('http://localhost:3000')
 
   const message = $("#message");
@@ -31,4 +31,4 @@ $(document).ready(function () {
     feedback.html("<p><i>" + data.username + " is typing a message..." + "</i></p>")
   })
 
-});
+};
