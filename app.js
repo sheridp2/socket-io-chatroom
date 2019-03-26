@@ -10,7 +10,7 @@ app.get('/', (req, res) =>{
 })
 
 
-server = app.listen(3000 || PORT)
+server = app.listen(3000 || process.env.PORT)
 
 const io = require("socket.io")(server)
 
