@@ -1,4 +1,5 @@
-$(function(){
+
+$(document).ready(function () {
   const socket = io.connect('http://localhost:3000')
 
   const message = $("#message");
@@ -30,4 +31,4 @@ $(function(){
     feedback.html("<p><i>" + data.username + " is typing a message..." + "</i></p>")
   })
 
-})
+});
