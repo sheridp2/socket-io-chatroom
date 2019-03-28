@@ -1,6 +1,6 @@
 
 window.onload = function () {
-  const socket = io.connect('https://secret-best-buds-chatroom.herokuapp.com/')
+  const socket = io.connect('https://secret-best-buds-chatroom.herokuapp.com/' || 'https://localhost:3000/')
 
   const message = $("#message");
   const username = $("#username");
